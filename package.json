@@ -1,0 +1,22 @@
+{
+  "name": "reactjs-auth-boilerplate",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hebertporto/reactjs-auth-boilerplate.git"
+  },
+  "author": "Hebert Porto <hebertporto@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hebertporto/reactjs-auth-boilerplate/issues"
+  },
+  "homepage": "https://github.com/hebertporto/reactjs-auth-boilerplate#readme",
+  "dependencies": {
+    "webpack": "^3.3.0"
+  }
+}
