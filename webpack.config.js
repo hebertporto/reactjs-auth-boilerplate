@@ -15,8 +15,13 @@ module.exports = {
     new ExtractTextPlugin("app.css"),
   ],
   module: {
+    preLoaders: [{
+      test: /.js[x]?$/,
+      exclude: [/node_modules/, /libs/],
+      loader: 'eslint-loader'
+    }],
     loaders: [{
-      test: /.jsx?$/,
+      test: /.js[x]?$/,
       loader: 'babel-loader',
       exclude: /node_modules/,
       query:{
