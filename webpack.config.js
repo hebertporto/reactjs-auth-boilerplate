@@ -14,6 +14,11 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('app.css'),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+    }),
   ],
   module: {
     rules: [
@@ -43,6 +48,11 @@ module.exports = {
     ],
   },
   resolve: {
+    alias: {
+      modules: path.resolve(__dirname, '/node_modules'),
+      jquery: 'modules/admin-lte/plugins/jQuery/jquery-2.2.3.min.js',
+      bootstrap: 'modules/admin-lte/bootstrap/js/bootstrap.js',
+    },
     modules: [
       'node_modules',
       path.resolve(__dirname, 'app'),

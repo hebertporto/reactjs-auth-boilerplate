@@ -1,7 +1,12 @@
 import React from 'react'
 
-export default props => (
+import Header from './common/layout/Header'
+
+export default () => (
   <div className="wrapper">
-    <p>Ops</p>
+    <Header />
+    <div className="content-wrapper">
+      <p>Ops Root</p>
+    </div>
   </div>
 )

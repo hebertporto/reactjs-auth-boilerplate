@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hebertporto/reactjs-auth-boilerplate#readme",
   "dependencies": {
+    "admin-lte": "^2.3.11",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
