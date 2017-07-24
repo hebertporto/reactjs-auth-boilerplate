@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
@@ -40,5 +41,12 @@ module.exports = {
         loader: 'file',
       },
     ],
+  },
+  resolve: {
+    modules: [
+      'node_modules',
+      path.resolve(__dirname, 'app'),
+    ],
+    extensions: ['.js', '.json', '.jsx', '.css'],
   },
 }

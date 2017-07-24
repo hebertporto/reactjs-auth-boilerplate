@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default props => (
+export default () => (
   <div className="wrapper">
-    <p>Ops</p>
+    <p>Ops Modules</p>
   </div>
 )
