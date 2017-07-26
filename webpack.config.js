@@ -8,6 +8,7 @@ module.exports = {
     path: `${__dirname}/public`,
     filename: './bundle.js',
   },
+  devtool: 'inline-source-map',
   devServer: {
     port: 8080,
     contentBase: './public',
@@ -48,15 +49,10 @@ module.exports = {
     ],
   },
   resolve: {
+    modules: ['node_modules'],
     alias: {
-      modules: path.resolve(__dirname, '/node_modules'),
-      jquery: 'modules/admin-lte/plugins/jQuery/jquery-2.2.3.min.js',
-      bootstrap: 'modules/admin-lte/bootstrap/js/bootstrap.js',
+      lib: path.resolve(__dirname, '/node_modules'),
     },
-    modules: [
-      'node_modules',
-      path.resolve(__dirname, 'app'),
-    ],
     extensions: ['.js', '.json', '.jsx', '.css'],
   },
 }

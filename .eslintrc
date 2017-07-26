@@ -14,5 +14,11 @@
     "rules": {
         "semi": ["warn", "never"],
         "no-console": 1
-    }
+    },
+    "settings": {
+        "import/resolver": {
+        "webpack": { "config": "webpack.config.js" },
+        "babel-module-alias": {}
+        }
+  }
 }
