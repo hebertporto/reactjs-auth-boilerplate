@@ -26,7 +26,10 @@ module.exports = {
       {
         test: /.jsx?$/,
         enforce: 'pre',
-        exclude: [/node_modules/, /libs/],
+        exclude: [
+          path.resolve(__dirname, 'node_modules'),
+          path.resolve(__dirname, 'libs'),
+        ],
         loader: 'eslint-loader',
       },
       {
@@ -51,7 +54,7 @@ module.exports = {
   resolve: {
     modules: ['node_modules'],
     alias: {
-      lib: path.resolve(__dirname, '/node_modules'),
+      lib: path.resolve(__dirname, 'node_modules'),
     },
     extensions: ['.js', '.json', '.jsx', '.css'],
   },
